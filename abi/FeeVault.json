@@ -1,0 +1,20 @@
+[
+  "event AdminChanged(address,address)",
+  "event BeaconUpgraded(address indexed)",
+  "event Initialized(uint8)",
+  "event OwnershipTransferred(address indexed,address indexed)",
+  "event Paused(address)",
+  "event Unpaused(address)",
+  "event Upgraded(address indexed)",
+  "function execute(address,bytes,uint256) payable",
+  "function initialize(address)",
+  "function owner() view returns (address)",
+  "function pause()",
+  "function paused() view returns (bool)",
+  "function proxiableUUID() view returns (bytes32)",
+  "function renounceOwnership()",
+  "function transferOwnership(address)",
+  "function unpause()",
+  "function upgradeTo(address)",
+  "function upgradeToAndCall(address,bytes) payable"
+]
