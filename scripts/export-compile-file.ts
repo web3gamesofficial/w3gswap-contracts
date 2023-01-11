@@ -3,7 +3,7 @@ import fs from 'fs';
 import hre from 'hardhat';
 
 async function main() {
-  const outputDirectory = path.resolve(hre.config.paths.root, './output');
+  const outputDirectory = path.resolve(hre.config.paths.root, './build');
 
   let fullPaths = await hre.artifacts.getArtifactPaths();
 

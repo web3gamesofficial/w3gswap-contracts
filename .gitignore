@@ -16,6 +16,7 @@ config/*
 # TypeScript tsc build
 output
 dist
+build
 
 # TypeScript bindings output directory
 types

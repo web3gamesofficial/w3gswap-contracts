@@ -1,16 +1,17 @@
 {
   "name": "@w3gswap/contracts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "",
   "license": "MIT",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
-    "build": "yarn clean && yarn compile && yarn export-abi",
+    "build": "yarn clean && yarn compile && yarn export-abi && yarn export-compile-file",
     "export-abi": "hardhat export-abi",
+    "export-compile-file": "ts-node ./scripts/export-compile-file.ts",
     "coverage": "hardhat coverage",
     "clean": "rimraf ./coverage ./coverage.json ./abi ./output && hardhat clean",
-    "pretest": "yarn compile && ts-node ./scripts/export-compile-file.ts",
+    "prepublish": "yarn build",
     "typechain": "hardhat typechain",
     "test:local": "hardhat test --network localhost",
     "test:mocha": "mocha --require ts-node/register --timeout 100000 'test/**/*.spec.ts'",
@@ -51,6 +52,7 @@
     "prettier": "prettier -w **/*.{js,ts,md,sol,json,yml}",
     "ci:test": "yarn compile && yarn test"
   },
+  "homepage": "https://w3gswap.com/",
   "repository": {
     "type": "git",
     "url": "https://github.com/web3gamesofficial/w3gswap-contracts"
