@@ -1,6 +1,6 @@
 {
   "name": "@w3gswap/contracts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "",
   "license": "MIT",
   "scripts": {
@@ -59,6 +59,11 @@
   },
   "keywords": [
     "w3gswap"
+  ],
+  "files": [
+    "abi",
+    "build",
+    "contracts"
   ],
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.1",
